@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BlueOn</string>
+    <string name="Bluetooth">BLUETOOTH</string>
+    <string name="Turnon">TURN ON</string>
+    <string name="Turnoff">TURN OFF</string>
+    <string name="send">SEND</string>
+    <string name="play">PLAY MUSIC</string>
+    <string name="scan">SCAN</string>
+    <string name="paired">Paired Devices</string>
+    <string name="available">Available devices</string>
+    <string name="scanning">Scanning</string>
+    <string name="select_device">Select Device</string>
+    <string name="none_found">None Found</string>
+    <string name="Music">Music List</string>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_scandevices"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_bluetooth"
+    tools:context="com.example.kontham.blueon.scandevices">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paired"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:id="@+id/paired"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/paired"
+        android:id="@+id/linear_layout"
+        android:layout_above="@+id/scandevices">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:id="@+id/list_item_paired"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/available"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:id="@+id/available_devices"
+        android:textStyle="normal|bold"
+        android:textSize="16sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:id="@+id/list_item_scan" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/scan"
+        android:layout_margin="8dp"
+        android:id="@+id/scandevices"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_music"
+        android:text="@string/play"
+        android:onClick="onPlayButton"
+        android:layout_alignBottom="@+id/scandevices"
+        android:layout_toRightOf="@+id/scandevices"
+        android:layout_toEndOf="@+id/scandevices" />
+
+</RelativeLayout>
